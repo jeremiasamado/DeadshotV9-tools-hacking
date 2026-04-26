@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "default_action": "deny",
+  "allowed_actions": {
+    "sentinel.analyze": true,
+    "sentinel.auto_response": true,
+    "runtime.monitor": true,
+    "operator.scope_validate": true,
+    "operator.plan": true,
+    "operator.execute": true,
+    "action.shield.status": true,
+    "action.shield.ensure_daemon": true,
+    "action.reports.latest": true,
+    "action.module.run_amass": false,
+    "action.module.run_theharvester": false,
+    "action.module.run_phoneinfoga": false,
+    "action.module.run_sherlock": false,
+    "action.module.run_sqlmap": false,
+    "action.module.run_nuclei": false,
+    "action.module.run_nikto": false,
+    "action.module.run_wpscan": false,
+    "action.module.run_rustscan": false,
+    "action.module.run_hydra": false,
+    "action.module.run_ffuf": false,
+    "action.module.run_netexec": false,
+    "action.module.run_sliver": false,
+    "action.module.run_metasploit": false,
+    "action.module.run_peas_server": false,
+    "action.module.run_responder": false,
+    "action.module.run_wifite": false,
+    "action.module.run_hashcat": false,
+    "action.module.run_zphisher": false,
+    "action.module.run_camphish": false,
+    "action.module.run_seeker": false,
+    "action.module.run_torproxy": false,
+    "action.module.run_live_intel": false,
+    "action.module.clean_tools_dir": false
+  },
+  "require_approval_for": [
+    "operator.execute"
+  ],
+  "blocked_patterns": [
+    "rm -rf",
+    "mkfs",
+    "dd if=",
+    "shutdown",
+    "reboot",
+    ":(){:|:&};:"
+  ]
+}

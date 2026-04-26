@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "engagement_id": "LOCAL-LAB-001",
+    "approved_by": "owner",
+    "approved_at_utc": "2026-01-01T00:00:00Z",
+    "expires_utc": "2026-12-31T23:59:59Z",
+    "allowed_targets": [
+        "127.0.0.1",
+        "localhost"
+    ],
+    "max_actions_per_run": 8,
+    "notes": "LAB DEFAULT \u2014 update engagement_id, approved_by, approved_at_utc, expires_utc and allowed_targets before any production engagement."
+}
